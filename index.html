@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <!-- custom CSS link -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <title>Contact form</title>
+
+    <style>
+      @font-face {
+        font-family: Karla;
+        src: url("./assets/fonts/Karla-VariableFont_wght.ttf");
+      }
+      .attribution {
+        font-family: Karla;
+        font-weight: 400;
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <form id="form" novalidate>
+        <h1 class="title">Contact Us</h1>
+        <div class="name-container">
+          <div class="first-name-container">
+            <div class="label-container">
+              <label for="first-name"
+                >First Name <span class="asterix">*</span></label
+              >
+            </div>
+            <input id="first-name" type="text" name="first-name" />
+            <p id="first-name-error-text" style="display: none">
+              First Name Error Text
+            </p>
+          </div>
+          <div class="last-name-container">
+            <div class="label-container">
+              <label for="last-name"
+                >Last Name <span class="asterix">*</span></label
+              >
+            </div>
+            <input id="last-name" type="text" name="last-name" />
+            <p id="last-name-error-text" style="display: none">
+              Last Name Error Text
+            </p>
+          </div>
+        </div>
+        <div class="email-address-container">
+          <div class="label-container">
+            <label for="email-address"
+              >Email Address <span class="asterix">*</span></label
+            >
+          </div>
+          <input id="email-address" type="email" name="email" />
+          <p id="email-error-text" style="display: none">Email Error Text</p>
+        </div>
+        <div class="query-type-container">
+          <div class="label-container">
+            <p>Query Type <span class="asterix">*</span></p>
+          </div>
+          <div class="query-options-container">
+            <div class="query-option">
+              <input
+                type="radio"
+                name="query-type"
+                value="general-enquiry"
+                id="general-enquiry"
+              />
+              <label for="general-enquiry">General Enquiry</label>
+            </div>
+            <div class="query-option">
+              <input
+                type="radio"
+                name="query-type"
+                value="support-request"
+                id="support-request"
+              />
+              <label for="support-request">Support Request</label>
+            </div>
+          </div>
+          <p id="query-error-text" style="display: none">
+            Query Type Error Text
+          </p>
+        </div>
+        <div class="message-container">
+          <div class="label-container">
+            <label for="message">Message <span class="asterix">*</span></label>
+          </div>
+          <textarea id="message" name="message"></textarea>
+          <p id="message-error-text" style="display: none">
+            Message Error Text
+          </p>
+        </div>
+        <div class="consent-container">
+          <div class="consent-input">
+            <input type="checkbox" id="consent" name="consent" />
+            <label for="consent"
+              >I consent to being contacted by the team
+              <span class="asterix">*</span></label
+            >
+          </div>
+          <p id="consent-error-text" style="display: none">
+            Consent Error Text
+          </p>
+        </div>
+        <div class="submit-container">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+      <div id="success-message-container" style="display: none">
+        <div class="success-info">
+          <img src="assets/images/icon-success-check.svg" alt="success check" />
+          <p>Message Sent!</p>
+        </div>
+        <p class="success-message">
+          Thanks for completing the form. We'll be in touch soon!
+        </p>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          ><b>Frontend Mentor</b></a
+        >. Coded by
+        <a href="https://github.com/BrunoJScript"><b>Bruno Suppa</b></a
+        >.
+      </div>
+    </footer>
+    <script src="js/contact-form.js"></script>
+  </body>
+</html>
