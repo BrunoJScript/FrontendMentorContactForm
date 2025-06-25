@@ -7,7 +7,7 @@ Thanks for checking out this front-end coding challenge.
 **For this challenge, you need a good understanding of HTML, CSS and JavaScript.**
 
 ### 🔗 Live Demo
-( https://brunojscript.github.io/FrontendMentorContactForm/ )
+(  https://brunojscript.github.io/FrontendMentorContactForm/  )
 
 
 ## The challenge
